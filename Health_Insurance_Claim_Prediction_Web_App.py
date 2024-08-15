@@ -10,7 +10,7 @@ import pickle
 import streamlit as st
 
 # Load the trained model from disk
-loaded_model = pickle.load(open(r"\trained_model.sav", 'rb'))
+loaded_model = pickle.load(open(r"trained_model.sav", 'rb'))
 
 # Function for prediction
 def insurance_cost_prediction(input_data):
