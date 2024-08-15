@@ -9,7 +9,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-# Load the trained model from disk
+
 loaded_model = pickle.load(open("trained-model.sav", 'rb'))
 
 # Function for prediction
@@ -50,7 +50,7 @@ def main():
     # Code for prediction
     result = None
 
-   # Creating a button for prediction
+    # Creating a button for prediction
     if st.button("Get Prediction"):
         result = insurance_cost_prediction(input_data)
         if isinstance(result, (int, float)):  # Check if result is numeric
